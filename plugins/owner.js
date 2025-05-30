@@ -6,15 +6,15 @@ cmd({
     pattern: "owner",
     react: "馃憫", // Reaction emoji when the command is triggered
     alias: ["king"],
-    desc: "Get owner number",
+    desc: "+94729101856",
     category: "main",
     filename: __filename
 }, 
 async (conn, mek, m, { from }) => {
     try {
         // Owner's contact info
-        const ownerNumber = '94743387798'; // Replace this with the actual owner number
-        const ownerName = '饟啯醼�.M.R Damith madusanka饟啰'; // Replace this with the owner's name
+        const ownerNumber = '94729101856'; // Replace this with the actual owner number
+        const ownerName = '饟啯醼�king_jokaer饟啰'; // Replace this with the owner's name
         const organization = 'Kavindu TEAM'; // Optional: replace with the owner's organization
 
         // Create a vCard (contact card) for the owner
@@ -37,7 +37,7 @@ async (conn, mek, m, { from }) => {
         await conn.sendMessage(from, {
             text: `This is the owner's contact: ${ownerName}`,
             contextInfo: {
-                mentionedJid: [ownerNumber.replace('94743387798') + '94743387798@s.whatsapp.net'], // Mention the owner
+                mentionedJid: [ownerNumber.replace('94729101856') + '94729101856@s.whatsapp.net'], // Mention the owner
                 quotedMessageId: sentVCard.key.id // Reference the vCard message
             }
         }, { quoted: mek });
